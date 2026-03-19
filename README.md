@@ -58,16 +58,16 @@ bun run preview
 ## Project Structure
 
 ```text
-src/
-  components/
-    SceneCanvas.tsx
-    sections/
-  lib/
-    content.ts
-    motion.ts
-  App.tsx
-  index.css
-  main.tsx
+src/                    # application source
+  components/           # reusable UI and scene components
+    SceneCanvas.tsx     # Three.js hero background and WebGL fallback
+    sections/           # one-page content sections
+  lib/                  # content data and motion setup
+    content.ts          # section copy and card/gallery data
+    motion.ts           # GSAP intro, scroll, and hover animations
+  App.tsx               # top-level page composition
+  index.css             # global styles, tokens, and responsive layout
+  main.tsx              # React entry point
 ```
 
 ## Notes
